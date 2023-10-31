@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Контакты</title>
+        <link href="StylesCSS/contactsstyle.css" rel="Stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>
+            <U>
+                Контакты
+            </U>
+        </h1>
+
+        <h2>
+            Магазин спортивных товаров
+        </h2>
+
+            <ul>
+                <li><a href="index.html" target="_blank">Главная</a></li>
+                <li><a href="catalog.html" target="_blank">Каталог</a></li>
+                <li><a href="contacts.html" target="_blank">Контакты</a></li>
+            </ul>
+        <br>
+        <hr>
+
+        <h3 class="Наши контакты">
+            Наши контакты
+        </h3>
+
+        <form action="contacts.html" method="post">
+            <fieldset>
+                <legend>Напишите нам:</legend>
+                <P>
+                    <label for="letter">Введите Ваше имя:</label><br>
+                    <input name="textfield" type="text" id="letter">
+                </p>
+                <br>
+                <p>
+                    <label for="email">Ведите ваш email:</label><br>
+                    <input required type="email" name="username" id="email">
+                </P>
+                <br>
+                <p>
+                    <label for="item">Ведите тему сообщения:</label>><br>
+                    <input  name="useritem" type="text" id="item">
+                </P>
+                <br>
+                <p>
+                    <label for="date">Ведите дату:</label>><br>
+                    <input  name="currentdata" type="date" id="date">
+                </P>
+                <br>
+                <label for="point">Суть Вашего письма:</label><br>
+                <textarea cols="30" rows="5" name="textcontent" maxlength="30" id="point"></textarea>
+
+                <button>отправить</button>
+            </fieldset>
+        </form>>
+        <h5>Наши адрес и Контакты:</h5>
+        <p>
+            <ol>
+                <i>
+                    <li>Телефон: +7-928-777-777-77-77</li>
+                    <li>Адрес: г.Таганрог, ул.Пархоменко 5-2</li>
+                    <li>Email: sportweartaganrog@mail.ru</li>
+                </i>
+            </ol>
+        </p>
+        <br>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5395c43501fcb83eedccf55e9ffae9977300dbe3c4fbc820046aa37d1f395238&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+        <br>
+        <hr>
+        <p class="права">&copy; "Все права защищены"</p>
+        <br>
+
+        <?php
+            echo $_post['textfield'];
+            echo $_post['username'];
+            echo $_post['useritem'];
+            echo $_post['textcontent'];
+?>
+    </body>
+</html>

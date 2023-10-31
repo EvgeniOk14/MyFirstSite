@@ -1,0 +1,271 @@
+html{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    /*background-color: #FFE4B5;*/
+}
+@font-face{
+    font-family: "Dancing Script";
+    src: url("../fonts/DancingScript-VariableFont_wght");
+}
+
+@font-face{
+    font-family: 'teddy_bear', sans-serif;
+    src: url("fonts/teddy-bear.ttf");
+}
+
+@font-face{
+    font-family: 'lonely-basket2', sans-serif;
+    src: url("lonely-basket2.ttf");
+}
+
+ @font-face{
+     font-family: 'angilla-tattoo-personal-use11', sans-serif;
+     src: url("fonts/angilla-tattoo-personal-use11.ttf");
+ }
+
+td{
+    border: 1px solid black;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+/*td[class="simple-text"]{
+    visibility: hidden;
+    display: none;
+}*/
+
+td:first-letter{
+    color:red;
+    font-size: 50px;
+}
+
+td[id="2"]{
+    border-spacing: 5px 10px;
+    padding: 7px 10px;
+}
+
+th{
+    border: 1px solid black;
+    }
+
+.references{
+    font-family: 'Dancing Script', sans-serif;
+    font-style: italic;
+}
+
+
+ input{
+    height: 15px;
+    background: #C0C0C0;
+ }
+ input:focus{
+    background: #bc5acc;
+ }
+
+a {
+    display:block;
+    background: blue;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+a:not(a[class="регистрация"]){
+    line-height: 50px;
+    width: 135px;
+}
+a[class="регистрация"]{
+    width: 150px;
+    line-height: 30px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+a:hover{
+    color:green;
+}
+a:active{
+    color:red;
+}
+a:link{
+    color:yellow;
+}
+
+p1{
+    background: #ceffb7;
+}
+
+
+p1:hover a1{
+    background: yellow;
+}
+
+a1:before{
+    content:'<<';
+}
+a1:after{
+content: '>>'
+}
+
+button{
+    width: 70px;
+    line-height: 25px;
+    margin-left: 45px;
+
+}
+
+.container{
+    width: 960px;
+    margin: 20px auto 0 auto;
+    background: #747376;
+    overflow: hidden;
+}
+
+.container1{
+    width: 945px;
+    height: 300px;
+    margin: 0px auto 0 auto;
+    background: #747376;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.товар{
+    width: 30%;
+    float: left;
+    height: 200px;
+    background: #ff9c00;
+}
+
+.товар:nth-child(n+4){
+    margin-top: 20px;
+}
+
+.товар:not(:nth-child(3n)){
+    margin-right: 5%;
+}
+
+.товар:before{
+    content:'NEW';
+    background: url(../img/фон/fon3.jpg);
+}
+
+.товар:after{
+    content:'super price';
+    background: url(../img/фон/fon2.jpg);
+    margin-left: 112px;
+    transform: rotate(45deg);
+}
+
+div[class="границы"]{
+    height: 50px;
+    width: 950px;
+    background: #ff90b1;
+    border-top: 5px solid #004eff;
+    border-bottom: 3px solid black;
+    position: relative;
+    /*margin-left: 250px;*/
+
+}
+
+div[class="границы"]:before{
+    width: 100%;
+    border-top: 2px solid red;
+    position: absolute;
+    top: -4px;
+    left: 0;
+}
+
+p[class="text1"]{
+    width: 500px;
+    height: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}
+
+p[class="text1"]:first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+p[class="text1"]:first-line{
+    color: green;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    width:950px;
+    height: 300px;
+}
+
+
+h1[class="Главная"] {
+    font-family: 'angilla-tattoo-personal-use11';
+    /*font-family: 'teddy_bear', sans-serif;*/
+    font-size: 50px;
+    text-aling: center;
+    margin-left: 10px;
+    padding: 20px 0;
+    text-shadow: 2px 2px 2px white;
+   }
+
+h2[class="Магазин спортивных товаров"] {
+    /*font-family: 'teddy_bear', sans-serif;*/
+    /*font-family: 'angilla-tattoo-personal-use11', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-aling: center;
+    marging: 0;
+    padding: 20px 0;
+    text-shadow: 2px 2px 2px white;
+    color: blue;
+}
+
+
+h3, h4{
+    font-family: 'lonely-basket2', sans-serif;
+    font-size: 25px;
+    text-aling: center;
+    marging: 0;
+    padding: 20px 0;
+    text-shadow: 2px 2px 2px white;
+}
+
+body{
+    /*margin: 0;
+    height: 65vh;
+    width: 100vw;*/
+    /* width: 600px;*/
+     margin: 0 auto;
+     /*background-color: #FFE485;*/
+     background-image: url("../img/фон/fon.jpg");
+     background-size: cover;
+     background-attachment: fixed;
+     padding-right: 25%;
+    /* padding: 0 20px 20px 20px;
+     border: 2px solid white; */
+     }
+ form{
+    padding-right: 50%;
+ }
+
+img{
+     width: 180px;
+}
+img[class="top"]{
+    width: 120px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.Наш магазин{
+    width 10;
+}
